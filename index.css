@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global styles */
 body {
   @apply bg-black text-white font-sans;
+}
+
+/* KYC Warning Banner */
+.kyc-warning {
+  @apply bg-red-700 text-white text-sm font-bold text-center py-2 px-4;
+}
+
+/* Wallet Type Tag */
+.wallet-tag {
+  @apply inline-block bg-blue-700 text-xs font-semibold px-2 py-1 rounded-md mr-2;
+}
+
+/* Input field styling */
+.input-field {
+  @apply w-full bg-gray-900 border border-gray-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Primary button */
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-md transition duration-200;
+}
+
+/* Secondary button */
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-md;
+}
+
+/* Error Message */
+.error-message {
+  @apply text-red-500 text-sm font-medium mt-1;
+}
+
+/* Success Banner */
+.success-banner {
+  @apply bg-green-700 text-white text-sm font-semibold text-center py-2;
+}
+
+/* Wallet Connect Dropdown */
+.wallet-dropdown {
+  @apply absolute right-0 mt-2 w-48 bg-gray-800 border border-gray-700 rounded-md shadow-lg z-50;
+}
+
+/* Wallet Connect Option */
+.wallet-option {
+  @apply block px-4 py-2 text-sm text-white hover:bg-gray-700 cursor-pointer;
+}
+
+/* Wallet Connection Status */
+.wallet-status {
+  @apply flex items-center gap-2 text-sm font-medium;
+}
+
+/* Connected Wallet Badge */
+.wallet-connected {
+  @apply bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full;
+}
+
+/* Disconnected Wallet Badge */
+.wallet-disconnected {
+  @apply bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full;
+}
+
+/* Wallet Icon */
+.wallet-icon {
+  @apply w-5 h-5 inline-block mr-1;
 }
